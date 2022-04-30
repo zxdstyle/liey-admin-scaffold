@@ -1,4 +1,4 @@
-module liey-admin-scaffold
+module github.com/zxdstyle/liey-admin-scaffold
 
 go 1.17
 
