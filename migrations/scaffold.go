@@ -5,11 +5,13 @@ import (
 	"github.com/zxdstyle/liey-admin/framework/http/bases"
 )
 
-type RoleMigration struct {
+type ScaffoldMigration struct {
 }
 
-func (r RoleMigration) Models() []bases.RepositoryModel {
+func (r ScaffoldMigration) Models() []bases.RepositoryModel {
 	return []bases.RepositoryModel{
-		model.Role{},
+		&model.Role{},
+		&model.Permission{},
+		&model.RoleHasPermission{},
 	}
 }

@@ -24,6 +24,6 @@ func (p Plugin) Boot() error {
 
 func (p Plugin) Migrations() []database.Migration {
 	return []database.Migration{
-		migrations.RoleMigration{},
+		migrations.ScaffoldMigration{},
 	}
 }

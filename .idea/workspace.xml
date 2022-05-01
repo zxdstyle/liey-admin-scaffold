@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c30b6b6-c0ee-4989-b212-43591c676fe2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/plugin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/routes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/handler/roles.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/handler/roles.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/logic/role/logic.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/logic/role/logic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/model/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/model/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/repository/role/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/repository/role/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/repository/role/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/repository/role/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/scaffold.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.go" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +50,14 @@
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/migrations" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/migrations" />
+      <recent name="$PROJECT_DIR$/http/model" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/http/logic/role" />
     </key>
@@ -68,6 +76,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -76,5 +85,16 @@
         <entry key="GOPROXY" value="https://goproxy.io,direct" />
       </map>
     </environment>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../liey-admin/framework/http/requests/rest.go</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
