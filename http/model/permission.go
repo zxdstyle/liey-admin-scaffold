@@ -1,18 +1,24 @@
 package model
 
-import "github.com/zxdstyle/liey-admin/framework/http/bases"
+import (
+	"github.com/zxdstyle/liey-admin/framework/http/bases"
+)
 
 type (
 	Permission struct {
 		bases.Model
-		Name  *string          `gorm:"not null;type:varchar(64);comment:名称" json:"name" v:"required-if:id,0"`
-		Slug  *string          `gorm:"not null;type:varchar(64);unique;comment:标识" json:"slug" v:"required-if:id,0|unique:permissions,slug"`
-		Rules *PermissionRules `gorm:"not null;serializer:json;comment:权限规则" json:"rules" v:"required-if:id,0"`
+		Name  *string           `gorm:"not null;type:varchar(64);comment:名称" json:"name,omitempty" v:"required"`
+		Slug  *string           `gorm:"not null;type:varchar(64);unique;comment:标识" json:"slug,omitempty" v:"required,unique=permissions slug"`
+		Rules *[]PermissionRule `gorm:"not null;serializer:json;comment:权限规则" json:"rules,omitempty" v:"required"`
+
+		Roles *Roles `gorm:"many2many:role_has_permissions;" json:"roles,omitempty"`
 	}
 
 	Permissions []*Permission
 
 	PermissionRule struct {
+		HttpMethods []string `json:"http_methods" v:"required"`
+		HttpPath    string   `json:"http_path" v:"required"`
 	}
 
 	PermissionRules []PermissionRule
