@@ -8,8 +8,8 @@ type (
 	Permission struct {
 		bases.Model
 		Name  *string           `gorm:"not null;type:varchar(64);comment:名称" json:"name,omitempty" v:"required"`
-		Slug  *string           `gorm:"not null;type:varchar(64);unique;comment:标识" json:"slug,omitempty" v:"required,unique=permissions slug"`
-		Rules *[]PermissionRule `gorm:"not null;serializer:json;comment:权限规则" json:"rules,omitempty" v:"required"`
+		Slug  *string           `gorm:"not null;type:varchar(64);unique;comment:标识" json:"slug,omitempty" v:"required,unique-db=permissions"`
+		Rules *[]PermissionRule `gorm:"not null;serializer:json;comment:权限规则" json:"rules,omitempty" v:"required,dive"`
 
 		Roles *Roles `gorm:"many2many:role_has_permissions;" json:"roles,omitempty"`
 	}
@@ -17,8 +17,8 @@ type (
 	Permissions []*Permission
 
 	PermissionRule struct {
-		HttpMethods []string `json:"http_methods" v:"required"`
-		HttpPath    string   `json:"http_path" v:"required"`
+		HttpMethods *[]string `json:"http_methods" v:"required,len:1"`
+		HttpPath    *string   `json:"http_path" v:"required"`
 	}
 
 	PermissionRules []PermissionRule
