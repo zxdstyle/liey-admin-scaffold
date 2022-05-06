@@ -60,7 +60,7 @@ func (Logic) checkPermissions(ctx context.Context, permissions *model.Permission
 		keys = append(keys, permission.GetKey())
 	}
 	var exists bool
-	if err := repository.Role.ExistsByKeys(ctx, keys, &exists); err != nil {
+	if err := repository.Permission.ExistsByKeys(ctx, keys, &exists); err != nil {
 		return err
 	}
 

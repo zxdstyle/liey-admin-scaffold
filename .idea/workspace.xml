@@ -8,7 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/handler/roles.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/handler/roles.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/logic/role/logic.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/logic/role/logic.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http/model/permission.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/model/permission.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/model/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/model/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/model/role_has_permission.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/model/role_has_permission.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.go" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -38,7 +38,7 @@ func (r Role) Show(ctx context.Context, req requests.Request) (*responses.Respon
 
 func (r Role) Update(ctx context.Context, req requests.Request) (*responses.Response, error) {
 	role := &model.Role{}
-	if err := req.Validate(role); err != nil {
+	if err := req.Parse(role); err != nil {
 		return nil, err
 	}
 

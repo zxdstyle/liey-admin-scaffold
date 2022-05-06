@@ -17,7 +17,7 @@ type (
 	Permissions []*Permission
 
 	PermissionRule struct {
-		HttpMethods *[]string `json:"http_methods" v:"required,len:1"`
+		HttpMethods *[]string `json:"http_methods" v:"required,len=1"`
 		HttpPath    *string   `json:"http_path" v:"required"`
 	}
 
