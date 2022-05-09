@@ -3,9 +3,11 @@ package scaffold
 import (
 	"github.com/zxdstyle/liey-admin-scaffold/http/handler"
 	"github.com/zxdstyle/liey-admin-scaffold/migrations"
+	"github.com/zxdstyle/liey-admin-scaffold/publishable"
 	"github.com/zxdstyle/liey-admin/framework/adm"
 	migrator "github.com/zxdstyle/liey-admin/framework/database/migrations"
 	"github.com/zxdstyle/liey-admin/framework/http/server"
+	"github.com/zxdstyle/liey-admin/framework/support/publish"
 )
 
 func RegisterRoutes(group *server.RouterGroup) {
@@ -31,5 +33,11 @@ func (p Plugin) Boot() error {
 func (p Plugin) Migrations() []migrator.Migration {
 	return []migrator.Migration{
 		migrations.ScaffoldMigration{},
+	}
+}
+
+func (p Plugin) Resources() []publish.Publisher {
+	return []publish.Publisher{
+		publishable.ConfigPublisher,
 	}
 }

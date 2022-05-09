@@ -8,18 +8,18 @@ import (
 	"github.com/zxdstyle/liey-admin/framework/http/requests"
 )
 
-type DbRepository struct {
+type dbRepository struct {
 	*bases.GormRepository
 }
 
 func NewDbRepository() Repository {
-	return &DbRepository{
+	return &dbRepository{
 		GormRepository: bases.NewGormRepository(adm.DB().Model(model.Role{})),
 	}
 }
 
 // AttachPermissions 添加权限
-func (repo *DbRepository) AttachPermissions(ctx context.Context, role *model.Role, permissions *model.Permissions) error {
+func (repo *dbRepository) AttachPermissions(ctx context.Context, role *model.Role, permissions *model.Permissions) error {
 	if role == nil || permissions == nil {
 		return nil
 	}
@@ -36,7 +36,7 @@ func (repo *DbRepository) AttachPermissions(ctx context.Context, role *model.Rol
 }
 
 // SyncPermissions 同步权限
-func (repo *DbRepository) SyncPermissions(ctx context.Context, role *model.Role, permissions *model.Permissions) error {
+func (repo *dbRepository) SyncPermissions(ctx context.Context, role *model.Role, permissions *model.Permissions) error {
 	if role == nil || permissions == nil {
 		return nil
 	}

@@ -1,4 +1,4 @@
-package permission
+package admin
 
 import (
 	"github.com/zxdstyle/liey-admin-scaffold/http/model"
@@ -12,6 +12,6 @@ type dbRepository struct {
 
 func NewDbRepository() Repository {
 	return &dbRepository{
-		GormRepository: bases.NewGormRepository(adm.DB().Model(model.Permission{})),
+		GormRepository: bases.NewGormRepository(adm.DB().Model(model.Admin{})),
 	}
 }

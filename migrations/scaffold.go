@@ -13,5 +13,6 @@ func (r ScaffoldMigration) Models() []bases.RepositoryModel {
 		&model.Role{},
 		&model.Permission{},
 		&model.RoleHasPermission{},
+		&model.Admin{},
 	}
 }
