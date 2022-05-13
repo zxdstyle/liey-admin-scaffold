@@ -5,27 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c30b6b6-c0ee-4989-b212-43591c676fe2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/publishable/scaffold.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../liey-admin-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../liey-admin-demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../liey-admin-demo/app/handler/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/../liey-admin-demo/app/handler/auth.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../liey-admin-demo/app/kernel.go" beforeDir="false" afterPath="$PROJECT_DIR$/../liey-admin-demo/app/kernel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../liey-admin-demo/app/model/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../liey-admin-demo/app/model/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../liey-admin-demo/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../liey-admin-demo/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../liey-admin-demo/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../liey-admin-demo/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../liey-admin-demo/main.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../liey-admin-demo/routes/admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../liey-admin-demo/routes/admin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/liey-admin-scaffold.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/liey-admin-scaffold.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/scaffold.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gate/casbin.go" beforeDir="false" afterPath="$PROJECT_DIR$/gate/casbin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gate/gate.go" beforeDir="false" afterPath="$PROJECT_DIR$/gate/gate.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/logic/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/logic/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/repository/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/repository/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/repository/permission/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/repository/permission/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/repository/role/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/repository/role/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/scaffold.go" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/scaffold.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin.go" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishable/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/publishable/config.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,20 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/zxdstyle/homework/liey-admin-scaffold/http/logic"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zxdstyle/homework/liey-admin-scaffold/http/logic&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/http/logic" />
@@ -105,7 +97,17 @@
       <filePath value="$PROJECT_DIR$/../liey-admin-demo/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build serve" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <configuration name="go build queue" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="liey-admin-demo" />
+      <working_directory value="$PROJECT_DIR$/../liey-admin-demo" />
+      <parameters value="queue default" />
+      <kind value="FILE" />
+      <package value="github.com/zxdstyle/liey-admin-demo" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/../liey-admin-demo/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build serve" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="liey-admin-demo" />
       <working_directory value="$PROJECT_DIR$/../liey-admin-demo" />
       <kind value="FILE" />
@@ -125,11 +127,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.go build queue" />
       <item itemvalue="Go Build.go build serve" />
       <item itemvalue="Go Build.go build publish" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build serve" />
         <item itemvalue="Go Build.go build publish" />
       </list>
     </recent_temporary>
@@ -137,6 +141,9 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

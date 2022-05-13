@@ -1,13 +1,16 @@
 package scaffold
 
 import (
+	"context"
+	"github.com/gogf/gf/v2/frame/g"
+	"github.com/zxdstyle/liey-admin-scaffold/gate"
 	"github.com/zxdstyle/liey-admin-scaffold/http/handler"
 	"github.com/zxdstyle/liey-admin-scaffold/migrations"
 	"github.com/zxdstyle/liey-admin-scaffold/publishable"
 	"github.com/zxdstyle/liey-admin/framework/adm"
 	migrator "github.com/zxdstyle/liey-admin/framework/database/migrations"
 	"github.com/zxdstyle/liey-admin/framework/http/server"
-	"github.com/zxdstyle/liey-admin/framework/support/publish"
+	"github.com/zxdstyle/liey-admin/framework/support/publish/publisher"
 )
 
 func RegisterRoutes(group *server.RouterGroup) {
@@ -27,6 +30,15 @@ func (p Plugin) Name() string {
 }
 
 func (p Plugin) Boot() error {
+	ctx := context.Background()
+	ga, err := gate.NewCasbinGate(adm.DB())
+	if err != nil {
+		g.Log().Fatal(ctx, err)
+	}
+	if err := gate.RegisterGate(ga); err != nil {
+		g.Log().Fatal(ctx, err)
+	}
+
 	return nil
 }
 
@@ -36,8 +48,8 @@ func (p Plugin) Migrations() []migrator.Migration {
 	}
 }
 
-func (p Plugin) Resources() []publish.Publisher {
-	return []publish.Publisher{
+func (p Plugin) Resources() []publisher.Publisher {
+	return []publisher.Publisher{
 		publishable.ConfigPublisher,
 	}
 }

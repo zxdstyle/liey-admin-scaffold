@@ -8,6 +8,11 @@ import (
 var (
 	//go:embed scaffold.yaml
 	config []byte
+	//go:embed rbac_model.conf
+	rbacModel []byte
 
-	ConfigPublisher = publisher.NewConfigPublisher(config)
+	ConfigPublisher = publisher.NewConfigPublisher([]publisher.Publishable{
+		publisher.NewPublishable("config/scaffold.yaml", config),
+		publisher.NewPublishable("config/rbac_model.conf", rbacModel),
+	})
 )
